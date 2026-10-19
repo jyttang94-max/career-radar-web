@@ -1,0 +1,170 @@
+{
+  "timezone": "Asia/Seoul",
+  "schedule": {
+    "local_time": "08:00",
+    "cron_utc": "0 23 * * *"
+  },
+  "date_window": {
+    "posted_within_days": 7,
+    "closing_within_days": 7,
+    "combine": "OR",
+    "exclude_expired_from_default_view": true,
+    "missing_dates": "review"
+  },
+  "regions": {
+    "include": ["서울", "경기"],
+    "use_actual_work_location": true,
+    "infer_from_headquarters": false,
+    "missing_location": "review",
+    "priority_areas": [
+      "판교테크노밸리",
+      "제2판교테크노밸리",
+      "기흥 ICT밸리"
+    ]
+  },
+  "institution_categories": [
+    "기업재단",
+    "기타 재단",
+    "대학",
+    "대학병원·의료원",
+    "일반기업",
+    "기타기관"
+  ],
+  "foundation_fields": [
+    "학술·연구지원",
+    "장학·인재육성",
+    "문화예술",
+    "기타·복합"
+  ],
+  "priority_roles": [
+    "연구행정·연구지원",
+    "사업기획·운영",
+    "일반행정·사무",
+    "경영지원",
+    "인사·총무",
+    "대외협력·홍보"
+  ],
+  "employment": {
+    "primary": [
+      "정규직",
+      "시보·수습 후 정규직"
+    ],
+    "review": [
+      "전환 가능 계약직",
+      "채용형태 미확인",
+      "여러 고용형태가 섞인 공고"
+    ],
+    "exclude_from_default_view": [
+      "기간제",
+      "파견직",
+      "대체인력",
+      "전환 조건 없는 인턴"
+    ],
+    "require_explicit_regular_conversion": true,
+    "probation_months_examples": [3, 6]
+  },
+  "collection": {
+    "fixed_sources": {
+      "enabled": true,
+      "categories": [
+        "기업재단",
+        "기타 재단",
+        "대학",
+        "대학병원·의료원"
+      ]
+    },
+    "foundation_discovery": {
+      "enabled": true,
+      "include_unlisted_foundations": true,
+      "queries": [
+        "재단 정규직 채용 행정 사무",
+        "문화재단 직원 채용 사업기획 운영",
+        "학술재단 직원 채용",
+        "장학재단 직원 채용",
+        "기업재단 채용 경영지원",
+        "재단 연구지원 채용"
+      ]
+    },
+    "new_foundation_news": {
+      "enabled": true,
+      "lookback_days": 90,
+      "queries": [
+        "기업 재단 설립 출범",
+        "문화재단 설립 출범",
+        "학술재단 설립",
+        "장학재단 출범"
+      ],
+      "store_separately_from_job_postings": true,
+      "verify_before_adding_to_fixed_sources": true
+    },
+    "company_discovery": {
+      "enabled": true,
+      "areas": [
+        "판교테크노밸리",
+        "제2판교테크노밸리",
+        "기흥 ICT밸리"
+      ],
+      "named_companies": [
+        {
+          "name": "에스디바이오센서",
+          "aliases": [
+            "SD바이오센서",
+            "SD BIOSENSOR"
+          ]
+        }
+      ],
+      "queries": [
+        "판교 정규직 채용 경영지원",
+        "판교 정규직 채용 인사 총무",
+        "판교 정규직 채용 기획 사무",
+        "제2판교테크노밸리 직원 채용",
+        "기흥 ICT밸리 채용 경영지원",
+        "에스디바이오센서 채용"
+      ]
+    }
+  },
+  "posting_fields": [
+    "id",
+    "institution",
+    "institution_category",
+    "foundation_field",
+    "title",
+    "role",
+    "duties",
+    "requirements",
+    "preferred_qualifications",
+    "documents",
+    "employment",
+    "probation_and_conversion",
+    "location",
+    "salary",
+    "published_at",
+    "application_start",
+    "deadline",
+    "deadline_time",
+    "selection_schedule",
+    "appointment_date",
+    "posting_url",
+    "verification_status",
+    "review_reasons",
+    "first_seen_at",
+    "last_checked_at"
+  ],
+  "verification": {
+    "prefer_official_posting": true,
+    "require_posting_detail_url": true,
+    "search_snippet_is_not_verified_evidence": true,
+    "unknown_values": null,
+    "estimate_salary": false,
+    "guess_missing_deadline": false,
+    "foundation_type_requires_evidence": true
+  },
+  "website": {
+    "default_view": "active_and_review",
+    "default_sort": "deadline_ascending",
+    "show_collection_health": true,
+    "show_original_posting_link": true,
+    "personal_records_storage": "browser",
+    "personal_records_export_import": true
+  }
+}
