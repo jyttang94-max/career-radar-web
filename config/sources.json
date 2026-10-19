@@ -1,0 +1,157 @@
+{
+  "sources": [
+    {
+      "id": "hyundai_cmk",
+      "name": "현대차 정몽구 재단",
+      "category": "기업재단",
+      "category_verified": true,
+      "urls": [
+        "https://www.hyundai-cmkfoundation.org/usr/employment/list"
+      ],
+      "allowed_domains": [
+        "hyundai-cmkfoundation.org"
+      ],
+      "source_status": "board_identified",
+      "render": true
+    },
+    {
+      "id": "sempio_foundation",
+      "name": "샘표 우리맛문화재단",
+      "category": "기업재단",
+      "category_verified": true,
+      "urls": [
+        "https://sempiofoundation.org/news/notice"
+      ],
+      "allowed_domains": [
+        "sempiofoundation.org"
+      ],
+      "source_status": "board_identified",
+      "render": false
+    },
+    {
+      "id": "heart_heart",
+      "name": "하트하트재단",
+      "category": "기타 재단",
+      "category_verified": false,
+      "urls": [
+        "https://www.heart-heart.org/intro/employment/announcement"
+      ],
+      "allowed_domains": [
+        "heart-heart.org"
+      ],
+      "source_status": "board_identified",
+      "render": true
+    },
+    {
+      "id": "hanyang_hospital_seoul",
+      "name": "한양대학교병원 서울",
+      "category": "대학병원·의료원",
+      "category_verified": true,
+      "urls": [
+        "https://hyumc-cms.recruiter.co.kr/appsite/company/index"
+      ],
+      "allowed_domains": [
+        "hyumc-cms.recruiter.co.kr"
+      ],
+      "source_status": "board_identified",
+      "render": true
+    }
+  ],
+  "pending_sources": [
+    {
+      "id": "hanse_yes24",
+      "name": "한세예스24문화재단",
+      "category": "기업재단"
+    },
+    {
+      "id": "jungseok",
+      "name": "정석물류학술재단",
+      "category": "기업재단"
+    },
+    {
+      "id": "yangyoung",
+      "name": "양영재단",
+      "category": "기업재단"
+    },
+    {
+      "id": "sudang",
+      "name": "수당재단",
+      "category": "기업재단"
+    },
+    {
+      "id": "hanwha_culture",
+      "name": "한화문화재단",
+      "category": "기업재단"
+    },
+    {
+      "id": "korea_university",
+      "name": "고려대학교",
+      "category": "대학"
+    },
+    {
+      "id": "hanyang_university",
+      "name": "한양대학교",
+      "category": "대학"
+    },
+    {
+      "id": "ewha_university",
+      "name": "이화여자대학교",
+      "category": "대학"
+    },
+    {
+      "id": "catholic_university",
+      "name": "가톨릭대학교",
+      "category": "대학"
+    },
+    {
+      "id": "gachon_university",
+      "name": "가천대학교",
+      "category": "대학"
+    },
+    {
+      "id": "myongji_university",
+      "name": "명지대학교",
+      "category": "대학"
+    },
+    {
+      "id": "yonsei_university",
+      "name": "연세대학교",
+      "category": "대학"
+    },
+    {
+      "id": "korea_medical_center",
+      "name": "고려대학교의료원",
+      "category": "대학병원·의료원"
+    },
+    {
+      "id": "ewha_medical_center",
+      "name": "이화여자대학교의료원",
+      "category": "대학병원·의료원"
+    },
+    {
+      "id": "catholic_medical_center",
+      "name": "가톨릭중앙의료원",
+      "category": "대학병원·의료원"
+    },
+    {
+      "id": "snubh",
+      "name": "분당서울대학교병원",
+      "category": "대학병원·의료원"
+    },
+    {
+      "id": "dankook_hospital",
+      "name": "단국대학교병원",
+      "category": "대학병원·의료원"
+    },
+    {
+      "id": "sd_biosensor",
+      "name": "에스디바이오센서",
+      "category": "일반기업"
+    }
+  ],
+  "pending_source_policy": {
+    "require_official_board_verification": true,
+    "treat_as_collected_before_verification": false,
+    "report_unresolved_in_collection_health": true
+  }
+}
